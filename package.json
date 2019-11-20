@@ -1,0 +1,37 @@
+{
+	"name": "twik-components",
+	"private": true,
+	"version": "1.0.0",
+	"main": "index.js",
+	"dependencies": {
+		"classnames": "^2.2.6"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.6.2",
+		"@storybook/addon-actions": "^5.2.1",
+		"@storybook/addon-knobs": "^5.2.1",
+		"@storybook/addon-links": "^5.2.1",
+		"@storybook/addons": "^5.2.1",
+		"@storybook/react": "^5.2.1",
+		"babel-loader": "^8.0.6",
+		"husky": "^3.0.7",
+		"prettier": "^1.18.2",
+		"pretty-quick": "^1.11.1"
+	},
+	"scripts": {
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	},
+	"prettier": {
+		"singleQuote": true,
+		"useTabs": true,
+		"tabWidth": 4,
+		"semi": true,
+		"trailingComma": "all"
+	}
+}
